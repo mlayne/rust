@@ -951,8 +951,7 @@ impl<T> VecDeque<T> {
     /// assert_eq!(vector.contains(&1), true);
     /// assert_eq!(vector.contains(&10), false);
     /// ```
-    #[unstable(feature = "vec_deque_contains", reason = "recently added",
-               issue = "32630")]
+    #[stable(feature = "vec_deque_contains", since = "1.12.0")]
     pub fn contains(&self, x: &T) -> bool
         where T: PartialEq<T>
     {
